@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>LPL MASTERY</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      background-color: aliceblue;
+    }
+    form{
+      margin-top:20px;
+    }
+    .quiz-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .question {
+      
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding:20px; 
+    }
+    .question:nth-child(odd){
+      margin-right:5%;
+    }
+    .question p{
+      font-weight: bold;
+    }
+    
+    .answers {
+      margin-bottom: 20px;
+    }
+    .answers label:not(:first-child){
+      border-top:1px solid #e0e0e0;
+    }
+    
+    label {
+      padding:10px 0;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .result {
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
+    <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand">
+            <h1 class="m-0 display-4 text-uppercase text-white"><!--i class="bi bi-building text-primary me-2"></i-->LPL MASTERY</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="compiler.html" class="nav-item nav-link">Compiler</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Java Tutorials</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="introduction.html" class="dropdown-item">Java Introduction</a>
+                        <a href="getstarted.html" class="dropdown-item">Java Get Started</a>
+                        <a href="syntax.html" class="dropdown-item">Java Syntax</a>
+                        <a href="output.html" class="dropdown-item">Java Output</a>
+                        <a href="comments.html" class="dropdown-item">Java Comments</a>
+                        <a href="variables.html" class="dropdown-item">Java Variables</a>
+                        <a href="datatypes.html" class="dropdown-item">Java Data Types</a>
+                        <a href="typecasting.html" class="dropdown-item">Java Type Casting</a>
+                        <a href="operators.html" class="dropdown-item">Java Operators</a>
+                        <a href="Java String.html" class="dropdown-item">Java String</a>
+                        <a href="math.html" class="dropdown-item">Java Math</a>
+                       
+                    </div>
+                </div>
+                <a href="quiz.html" class="nav-item nav-link active">Quiz</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid page-header">
+  <h1 class="display-3 text-uppercase text-white mb-3">Quiz</h1>
+  
+</div>
+
+  <div class="quiz-container">
+    <h1>Random Questions From LPL MASTERY Tutorials</h1>
+    <hr>
+    <form id="quiz-form">
+      
+        <div class="question">
+          <p>1. What is Java?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q1" value="a">
+              object-oriented java programming language
+            </label>
+            <label>
+              <input type="radio" name="q1" value="b">
+              object-oreo programming language
+            </label>
+            <label>
+              <input type="radio" name="q1" value="c">
+              subject-oriented programming language and software platform
+            </label>
+            <label>
+              <input type="radio" name="q1" value="d">
+              object-oriented programming language
+            </label>
+          </div>
+        </div>
+        
+        <div class="question">
+          <p>2. A class should always start with an ________ first letter.</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q2" value="a">
+              lowercase
+            </label>
+            <label>
+              <input type="radio" name="q2" value="b">
+              startcase
+            </label>
+            <label>
+              <input type="radio" name="q2" value="c">
+              case-sensitive
+            </label>
+            <label>
+              <input type="radio" name="q2" value="d">
+              uppercase
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <pre><strong>3. Fill the blank.
+    public static void main(String[] args) {
+     _________________("Hello World");
+    }</strong></pre>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q3" value="a">
+              system.out.print
+            </label>
+            <label>
+              <input type="radio" name="q3" value="b">
+              System.out.println
+            </label>
+            <label>
+              <input type="radio" name="q3" value="c">
+              System.out,println
+            </label>
+            <label>
+              <input type="radio" name="q3" value="d">
+              System.Out.Print
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>4. What are symbols use to make comments in java?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q4" value="a">
+              // & /* */
+            </label>
+            <label>
+              <input type="radio" name="q4" value="b">
+              \\ & \* *\
+            </label>
+            <label>
+              <input type="radio" name="q4" value="c">
+              || ||
+            </label>
+            <label>
+              <input type="radio" name="q4" value="d">
+              <-- -->
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>5. What is the type of variables that stores text surounded by double quotes?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q5" value="a">
+              float
+            </label>
+            <label>
+              <input type="radio" name="q5" value="b">
+              boolean
+            </label>
+            <label>
+              <input type="radio" name="q5" value="c">
+              String
+            </label>
+            <label>
+              <input type="radio" name="q5" value="d">
+              int
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>6. primitive data type that Stores whole numbers from -128 to 127.</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q6" value="a">
+              int
+            </label>
+            <label>
+              <input type="radio" name="q6" value="b">
+              byte
+            </label>
+            <label>
+              <input type="radio" name="q6" value="c">
+              long
+            </label>
+            <label>
+              <input type="radio" name="q6" value="d">
+              double
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>7. What is the type casting that automatically converting a smaller type to a larger type size.</p>
+          <p>EX. byte -> short -> char -> int -> long -> float -> double</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q7" value="a">
+              Widening Casting 
+            </label>
+            <label>
+              <input type="radio" name="q7" value="b">
+              Auto Casting
+            </label>
+            <label>
+              <input type="radio" name="q7" value="c">
+              Narrowing Casting
+            </label>
+            <label>
+              <input type="radio" name="q7" value="d">
+              Manual Casting
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>8. Which group of Operators are this Operator Symbols beong to?</p>
+          <p>EX. + - * / % ++ --</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q8" value="a">
+              Arithmetic Operators
+            </label>
+            <label>
+              <input type="radio" name="q8" value="b">
+              Comparison operators
+            </label>
+            <label>
+              <input type="radio" name="q8" value="c">
+              Bitwise operators
+            </label>
+            <label>
+              <input type="radio" name="q8" value="d">
+              Logical operators
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>9. What method you need to find the length of a String?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q9" value="a">
+              length{}
+            </label>
+            <label>
+              <input type="radio" name="q9" value="b">
+              get.length()
+            </label>
+            <label>
+              <input type="radio" name="q9" value="c">
+              String.length()
+            </label>
+            <label>
+              <input type="radio" name="q9" value="d">
+              length()
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <p>10. What conditional statements are need to specify many alternative blocks of code?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q10" value="a">
+              else
+            </label>
+            <label>
+              <input type="radio" name="q10" value="b">
+              else if
+            </label>
+            <label>
+              <input type="radio" name="q10" value="c">
+              switch 
+            </label>
+            <label>
+              <input type="radio" name="q10" value="d">
+              if
+            </label>
+          </div>
+        </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    
+    <div class="result" id="result"></div>
+  </div>
+
+<!-- Footer Start -->
+<div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
+  <div class="row g-5">
+      <div class="col-lg-6 pe-lg-5">
+          <a href="index.html" class="navbar-brand">
+              <h1 class="m-0 display-4 text-uppercase text-white"><!--i class="bi bi-download text-primary me-2"></i-->LPL Mastery</h1>
+              <p>YOUR ULTIMATE RESOURCE FOR JAVA PROGRAMMING</p>
+          <div class="d-flex justify-content-start mt-4">
+              <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+          <div class="row g-5">
+              <div class="col-sm-6">
+                  <h4 class="text-white text-uppercase mb-4">Quick Links</h4>
+                  <div class="d-flex flex-column justify-content-start">
+                      <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                      <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                      <a class="text-white-50 mb-2" href="compiler.html"><i class="fa fa-angle-right me-2"></i>Compiler</a>
+                      <a class="text-white-50 mb-2" href="javatutorials.html"><i class="fa fa-angle-right me-2"></i>Java Tutorials</a>
+                      <a class="text-white-50" href="quiz.html"><i class="fa fa-angle-right me-2"></i>Quiz</a>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <h4 class="text-white text-uppercase mb-4">Popular Links</h4>
+                  <div class="d-flex flex-column justify-content-start">
+                      <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                      <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                      <a class="text-white-50 mb-2" href="compiler.html"><i class="fa fa-angle-right me-2"></i>Compiler</a>
+                      <a class="text-white-50 mb-2" href="javatutorials.html"><i class="fa fa-angle-right me-2"></i>Java Tutorials</a>
+                      <a class="text-white-50" href="quiz.html"><i class="fa fa-angle-right me-2"></i>Quiz</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
+  <div class="d-flex flex-column flex-md-row justify-content-between">
+      <div class="py-4 px-5 text-center text-md-start">
+          <p class="mb-0">&copy; <a class="text-primary" href="#">LPL MASTERY</a>. All Rights Reserved.</p>
+      </div>
+      <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
+          <p class="mb-0">Designed by <a class="text-dark" href="https://htmlcodex.com">HTML Codex</a></p>
+      </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+  
+  <script>
+    const quizForm = document.getElementById('quiz-form');
+    const resultDiv = document.getElementById('result');
+    const correctAnswers = ['d', 'd', 'b', 'a', 'c', 'b', 'a', 'a', 'd', 'c'];
+    
+    quizForm.addEventListener('submit', e => {
+      e.preventDefault();
+      
+      let score = 0;
+      const userAnswers = [quizForm.q1.value,quizForm.q2.value,quizForm.q3.value,quizForm.q4.value,quizForm.q5.value,quizForm.q6.value,quizForm.q7.value,quizForm.q8.value,quizForm.q9.value,quizForm.q10.value];
+      userAnswers.forEach((answer, index) => {
+        if (answer === correctAnswers[index]) {
+          score += 1;
+        }
+      });
+    
+      resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
+    });
+  </script>
+</body>
+</html>
